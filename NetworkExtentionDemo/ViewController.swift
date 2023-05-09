@@ -51,8 +51,6 @@ class ViewController: UIViewController {
             self.statusLabel.text = "disconnecting"
         case .on:
             self.statusLabel.text = "on"
-        default:
-            self.statusLabel.text = "unknow"
         }
         
     }
