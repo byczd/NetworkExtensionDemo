@@ -8,9 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    lazy var statusLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 14)
+        label.textColor = .green
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onVPNStatusChanged), name: NSNotification.Name(rawValue: kProxyServiceVPNStatusNotification), object: nil)
+        
         // Do any additional setup after loading the view.
         let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
         view.addSubview(button)
@@ -20,10 +30,32 @@ class ViewController: UIViewController {
         button.layer.borderColor = UIColor.green.cgColor
         button.layer.cornerRadius = 6
         button.addActionWithBlock { sender in
-            
+            VpnManager.sharedManager.switchVPN { (manager, error) in
+                self.onVPNStatusChanged()
+            }
         }
+     
+        view.addSubview(statusLabel)
+        statusLabel.frame = CGRect(x: 20, y: 180, width: 300, height: 30)
+        
     }
 
+    
+    @objc func onVPNStatusChanged() {
+        switch  VpnManager.sharedManager.vpnStatus {
+        case .off:
+            self.statusLabel.text = "off"
+        case .connecting:
+            self.statusLabel.text = "connecting"
+        case .disconnecting:
+            self.statusLabel.text = "disconnecting"
+        case .on:
+            self.statusLabel.text = "on"
+        default:
+            self.statusLabel.text = "unknow"
+        }
+        
+    }
 
 }
 

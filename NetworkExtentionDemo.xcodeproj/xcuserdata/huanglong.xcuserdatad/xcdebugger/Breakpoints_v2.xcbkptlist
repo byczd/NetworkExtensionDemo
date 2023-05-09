@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D33A93EA-556F-492D-9AFF-CB46A373703A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NetworkExtentionDemo/VpnManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "init()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "804521A2-8FBA-402C-AA4D-B8585ABD790F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -114,6 +98,38 @@
             endingLineNumber = "119"
             landmarkName = "-applyTunnelSettings:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "24939214-31D0-4D25-BA2B-41D1C1DCCCE5 - 7f1ab89271dffe0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[PacketTunnelProvider applyTunnelSettings:]"
+                  moduleName = "TunnelDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenzhidong/Downloads/iOS_Demo/NetworkExtentionDemo/TunnelDemo/PacketTunnelProvider.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "732">
+               </Location>
+               <Location
+                  uuid = "24939214-31D0-4D25-BA2B-41D1C1DCCCE5 - b355fc1333f94b61"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__44-[PacketTunnelProvider applyTunnelSettings:]_block_invoke"
+                  moduleName = "TunnelDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenzhidong/Downloads/iOS_Demo/NetworkExtentionDemo/TunnelDemo/PacketTunnelProvider.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -129,6 +145,70 @@
             startingLineNumber = "66"
             endingLineNumber = "66"
             landmarkName = "-startPacketForwarders"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD7CBA91-71BE-4CFD-A938-C94FD72B1187"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkExtentionDemo/VpnManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "switchVPN(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "118563FC-99C3-4DBA-B7A0-15784851BF23"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkExtentionDemo/VpnManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "loadAndCreateProviderManager(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "339BB5D1-3ACA-4181-9664-129A8178A425"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkExtentionDemo/VpnManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "loadAndCreateProviderManager(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "609D7410-BDCE-46EA-B5FE-C74E88ACBA7C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TunnelDemo/PacketTunnelProvider.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "-startTunnelWithOptions:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

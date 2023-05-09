@@ -180,15 +180,15 @@ extension VpnManager {
                 manager.protocolConfiguration?.excludeLocalNetworks = true
 
 //-----按需连接(按需开启代理)配置，在vpn关闭的情况，如果监测到外网请求自动开启vpn；
-//                manager.isOnDemandEnabled = true //默认开关状态为false
+                manager.isOnDemandEnabled = true //默认开关状态为false
 // isOnDemandEnabled按需启动，Toggles VPN On Demand. 按需启动开关
-//                let quickStartRule = NEOnDemandRuleEvaluateConnection()
-////// NEEvaluateConnectionRule将网络连接的属性与操作相关联
-////                let autoDomains = ["google.com","youtube.com","wikipedia.org","facebook.com","twitter.com","instagram.com","snapchat.com","voachinese.com","dw.com","bbc.com","rfi.fr","cnn.com","news.sky.com","cw.com","apnews.com","aljazeera.net","whatsapp.com","whatsapp.net"]
-////                "aljazeera.net" 半岛电视台
-//                quickStartRule.connectionRules = [NEEvaluateConnectionRule(matchDomains:["google.com","youtube.com"] , andAction: NEEvaluateConnectionRuleAction.connectIfNeeded)]
-//////              按需连接,如果开关开启，则在打开google.com时，会自动开启VPN(VPN关闭的情况下)
-//                manager.onDemandRules = [quickStartRule]
+                let quickStartRule = NEOnDemandRuleEvaluateConnection()
+//// NEEvaluateConnectionRule将网络连接的属性与操作相关联
+                let autoDomains = ["google.com","youtube.com","wikipedia.org","facebook.com","twitter.com","instagram.com","snapchat.com","voachinese.com","dw.com","bbc.com","rfi.fr","cnn.com","news.sky.com","cw.com","apnews.com","aljazeera.net","whatsapp.com","whatsapp.net"]
+//                "aljazeera.net" 半岛电视台
+                quickStartRule.connectionRules = [NEEvaluateConnectionRule(matchDomains:autoDomains , andAction: NEEvaluateConnectionRuleAction.connectIfNeeded)]
+//              按需连接,如果开关开启，则在打开google.com时，会自动开启VPN(VPN关闭的情况下)
+                manager.onDemandRules = [quickStartRule]
                 
 // saveToPreferences将manager保存至系统中, 如果saveToPreferences方法调用多次，会出现VPN 1 VPN 2等多个描述文件
                 manager.saveToPreferences(completionHandler: { (error) -> Void in
