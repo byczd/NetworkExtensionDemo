@@ -18,6 +18,8 @@
 		9802BFCB2A09F66E003E655B /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9802BFCA2A09F66E003E655B /* PacketTunnelProvider.m */; };
 		9802BFD02A09F66E003E655B /* TunnelDemo.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9802BFC42A09F66E003E655B /* TunnelDemo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9802BFD62A09F8DB003E655B /* VpnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9802BFD52A09F8DA003E655B /* VpnManager.swift */; };
+		9802BFE02A0A45AE003E655B /* totoReachabe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9802BFDE2A0A45AD003E655B /* totoReachabe.m */; };
+		9802BFE22A0A4810003E655B /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9802BFE12A0A4810003E655B /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		9802BFCC2A09F66E003E655B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9802BFCD2A09F66E003E655B /* TunnelDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TunnelDemo.entitlements; sourceTree = "<group>"; };
 		9802BFD52A09F8DA003E655B /* VpnManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpnManager.swift; sourceTree = "<group>"; };
+		9802BFDE2A0A45AD003E655B /* totoReachabe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = totoReachabe.m; sourceTree = "<group>"; };
+		9802BFDF2A0A45AE003E655B /* totoReachabe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = totoReachabe.h; sourceTree = "<group>"; };
+		9802BFE12A0A4810003E655B /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9802BFE22A0A4810003E655B /* libresolv.tbd in Frameworks */,
 				9802BFC72A09F66E003E655B /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +126,7 @@
 		9802BFC52A09F66E003E655B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9802BFE12A0A4810003E655B /* libresolv.tbd */,
 				9802BFC62A09F66E003E655B /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
@@ -130,6 +137,8 @@
 			children = (
 				9802BFC92A09F66E003E655B /* PacketTunnelProvider.h */,
 				9802BFCA2A09F66E003E655B /* PacketTunnelProvider.m */,
+				9802BFDF2A0A45AE003E655B /* totoReachabe.h */,
+				9802BFDE2A0A45AD003E655B /* totoReachabe.m */,
 				9802BFCC2A09F66E003E655B /* Info.plist */,
 				9802BFCD2A09F66E003E655B /* TunnelDemo.entitlements */,
 			);
@@ -249,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9802BFE02A0A45AE003E655B /* totoReachabe.m in Sources */,
 				9802BFCB2A09F66E003E655B /* PacketTunnelProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
